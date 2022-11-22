@@ -1,0 +1,388 @@
+/*!
+ Theme Name:   Trending News
+ Theme URI:    https://walkerwp.com/trending-news/
+ Description:  Trending News is the the child theme of WalkerPress, Which is feature rich WordPress magazine free theme, which provides tons of features and ready made layout for home section. Trending News designed with mobile-first approach, compatibility and responsive layout to build more accessible site for news, Newsportal, magazine, blog, personal blog, travel blogs etc. Find out demo and details about theme at https://walkerwp.com/trending-news/.
+ Author:       WalkerWP
+ Author URI:   https://walkerwp.com/
+ Template:     walkerpress
+ Version:      1.0.0
+ Tested up to: 6.0
+ Requires PHP: 5.6
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, grid-layout, blog, news, two-columns, three-columns, footer-widgets, sticky-post
+ Text Domain:  trending-news
+*/
+body {
+    background: #f3f3f3;
+}
+@media(min-width: 1600px){
+    .walkerwp-container{
+        padding: 0 100px;
+    }
+}
+.walkerwp-wraper.inner-wraper main#primary .content-layout .walkerpress-post-thumbnails span.estimate-reading-time, span.estimate-reading-time {
+    background: var(--primary-color);
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+.walkerwp-grid-7.walkerpress-slider.slider-1 {
+    padding: 0;
+}
+.banner-layout-1 .grid-posts .walkerwp-grid-6:first-child {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 16px;
+}
+.site-branding.header-ads-exist {
+    max-width: 400px;
+}
+.site-branding h1.site-title a {
+    border-bottom: 2px solid;
+    margin-bottom: 12px;
+    display: inline-block;
+    line-height: 1.7;
+}
+.site-branding h1.site-title a:hover {
+    color: var(--secondary-color);
+}
+.banner-layout-1 .grid-posts .walkerwp-grid-6 img{
+    width: 100%;
+}
+.banner-layout-1  .walkerpress-slide-box .slide-image {
+    height: 600px;
+}
+.banner-layout-1 .grid-posts .walkerpress-featured-box .content-part.with-thumbnail {
+    width: 100%;
+}
+.banner-layout-1 .grid-posts .walkerpress-featured-box {
+    position: relative;
+    overflow: hidden;
+    height: 289px;
+}
+.banner-layout-1 .grid-posts .walkerwp-grid-6:nth-child(2) {
+    padding-right: 0px;
+}
+.banner-layout-1 .grid-posts .walkerwp-grid-6:nth-child(3) {
+    padding-right: 0;
+    padding-left: 20px;
+}
+.walkerwp-wraper.ticker-news-wraper .ticker-header:after {
+    right: -31px;
+    top: 0;
+    border-width: 50px 0 0 31px;
+    border-color: transparent transparent transparent var(--primary-color);
+}
+.walkerwp-wraper.ticker-news-wraper .ticker-header{
+    width: 16.666%;
+}
+.news-ticker-box.walkerwp-grid-10{
+    width: 83.333%;
+    padding:0px 20px 5px 30px;
+}
+.walkerwp-wraper.tag-list ul.taglists a {
+    padding: 4px 5px;
+}
+.featured-post-grid {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.featured-post-box .post-thumbnail,
+.missed-post-box .post-thumbnail{
+    height: 300px;
+}
+.single-category.featured-grid-layout .post-lists ul li:nth-child(2n+2) {
+    padding: 0 0 0 10px;
+}
+.single-category.featured-grid-layout .post-lists ul li {
+    padding: 0 10px 0 0;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-1 {
+    margin: 4px 0 0;
+    border: 1px solid var(--primary-color);
+    border-left: 0;
+    border-right: 0;
+}
+.walkerpress-custom-header, .latest-post .box-title, .popular-posts .box-title, .sidebar-block .block-header, .box-title {
+    border-top: 0;
+    border-bottom:0;
+}
+
+.frontpage-content-block.sidebar-activated .double-category.featured-list-layout .post-thumbnail {
+    width: 30%;
+    height: 138px;
+}
+.frontpage-content-block.sidebar-activated .three-category.featured-list-layout ul.categories-widget.list-post .post-box .post-thumbnail {
+    width: 30%;
+    height: 100px;
+}
+.walkerwp-wraper.featured-post-wraper,
+.frontpage-content-block .walkerpress-widget-content {
+    margin-bottom: 35px;
+}
+
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-pocts-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-post-item {
+    position: relative;
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-post-box .post-thumbnail{
+    margin-bottom: 0;
+    position: relative;
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-pocts-content h4{
+    line-height: 1.5;
+    margin: 5px 0;
+}
+.walkerwp-grid-4.category-post-2 .category-post-item.main-post-item .post-thumbnail {
+    max-height: 357px;
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-pocts-content h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-pocts-content h4 a:hover{
+    color: var(--secondary-color);
+}
+
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-pocts-content span.category a,
+.walkerpress-slide-box .content-part span.category a, .featured-post-box .post-thumbnail span.category a, .left-grid-posts .content-part.with-thumbnail span.category a, .right-grid-posts .content-part.with-thumbnail span.category a, .banner-layout-1 .grid-posts .walkerpress-featured-box span.category a, .content-layout.list-layout .walkerpress-post-thumbnails span.category a, .content-layout.grid-layout .walkerpress-post-thumbnails span.category a, .missed-post-box span.category a, .single-category.grid-layout-overlay span.category a, .three-category.featured-list-layout .walkerwp-grid-4 .post-box.featured-post .post-thumbnail .post-content span.category a, .category-two.style-2 li.post-box.featured-post .post-content span.category a, .walkerpress-widget-content .category-two.style-slide .post-thumbnail .post-content span.category a, .featured-view.style-grid .post-box.featured-post .post-thumbnail .post-content span.category a {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0 5px;
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-pocts-content span.category a:hover{
+    background: var(--secondary-color);
+}
+.walkerwp-wraper.featured-post-wraper.featured-post-layout-1 .featured-post-item .post-thumbnail:after{
+    content: '';
+    width: 100%;
+    height: 56%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( 180deg, transparent, #000000e3);
+}
+a.walkerpress-primary-button, 
+main#primary .entry-content a.walkerpress-primary-button{
+
+    background: var(--primary-color);
+    color: #fff;
+}
+a.walkerpress-primary-button:hover, 
+main#primary .entry-content a.walkerpress-primary-button:hover{
+    background: var(--secondary-color);
+    color: #fff;
+}
+span.walkerpress-current-date {
+    text-transform: capitalize;
+}
+span.walkerpress-current-date .fa-clock {
+    font-size: 12px;
+}
+.box-title span:after,
+.walkerpress-custom-header span:after{
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 41px 23px 0 0;
+    border-color: var(--primary-color) transparent transparent transparent;
+    position: absolute;
+}
+.box-title {
+    text-transform: capitalize;
+}
+.box-title span,
+.walkerpress-custom-header span{
+    line-height: 30px;
+    padding: 0 20px;
+}
+.article-inner h3.entry-title,
+.left-grid-posts .walkerpress-featured-box h4, .right-grid-posts .walkerpress-featured-box h4, .banner-layout-1 .grid-posts .walkerpress-featured-box h4{
+    line-height: 1.3;
+}
+header.header-layout-1 button.global-search-icon {
+    background: #a1f996;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all ease 0.23s;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout span.focus-news-box {
+    background: transparent;
+}
+header.header-layout-1 button.global-search-icon:hover {
+    background: #fff;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout span.focus-thumb img {
+    height: 90px;
+    width: 90px;
+    margin-right: 0;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout span.focus-news-box .ticker-content h6 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout .ticker-arrows {
+    background: transparent;
+    position: inherit;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout .news-ticker-box span.focus-news-box{
+    margin-right: 0;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout .trending-ticker-arrows .focus-arrows {
+    position: absolute;
+    left: 40px;
+    top: 38%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 13px;
+    background: #fff;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    border-radius: 40px;
+    opacity: 0;
+    transition: all ease 0.23s;
+    z-index: 2;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout .trending-ticker-arrows .focus-arrows:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout:hover .trending-ticker-arrows .focus-arrows{
+    opacity: 1;
+    left: 120px;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout .trending-ticker-arrows .focus-arrows.ticker-news-next {
+    right: 40px;
+    left: auto;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout:hover .trending-ticker-arrows .focus-arrows.ticker-news-next{
+    right: 120px;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout span.focus-news-box .ticker-content{
+    max-width: 74%;
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout span.focus-news-box .ticker-content a.walkerpress-post-date {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+.walkerwp-wraper.ticker-news-wraper.ticker-layout-2.trending-layout span.focus-news-box .ticker-content a.walkerpress-post-date:hover {
+    color: var(--secondary-color);
+}
+.walkerwp-wraper.inner-wraper main#primary .content-layout.grid-layout {
+    column-count: 3;
+}
+.frontpage-content-block.sidebar-activated .double-category.featured-list-layout .post-thumbnail {
+    width: 50%;
+    height: 125px;
+}
+.walkerpress-slide-box .content-part h3 {
+    line-height: 1.5em;
+}
+.frontpage-content-block.sidebar-activated .three-category.featured-list-layout ul.categories-widget.list-post .post-box .post-thumbnail {
+    width: 35%;
+    height: 90px;
+}
+@media(max-width: 1460px){
+    .walkerwp-wraper.ticker-news-wraper .ticker-header {
+        width: 15%;
+    }
+    .news-ticker-box.walkerwp-grid-10{
+        width: 85%;
+    }
+    .banner-layout-1  .walkerpress-slide-box .slide-image {
+        height: 450px;
+    }
+    .banner-layout-1 .grid-posts .walkerpress-featured-box {
+        height: 216px;
+    }
+    .featured-post-box .post-thumbnail,
+    .missed-post-box .post-thumbnail {
+        height: 180px;
+    }
+}
+@media(max-width: 1260px){
+    .home h4 {
+        font-size: 17px;
+    }
+    .home .article-inner h3.entry-title, 
+    .home .left-grid-posts .walkerpress-featured-box h4, 
+    .home .right-grid-posts .walkerpress-featured-box h4, 
+    .home .banner-layout-1 .grid-posts .walkerpress-featured-box h4{
+        line-height: 18px;
+    }
+    .walkerwp-wraper.inner-wraper main#primary .content-layout.grid-layout {
+        column-count: 2;
+    }
+}
+@media(max-width: 1024px){
+    .walkerwp-wraper.inner-wraper main#primary .content-layout.grid-layout {
+        column-count: 2;
+    }
+    .menu-toggle span{
+        width: 25px;
+        left: 7px;
+    }
+    .main-navigation button.menu-toggle{
+        height: 34px;
+    }
+    .menu-toggle span:nth-of-type(2) {
+        top: 15px;
+    }
+    .menu-toggle span:nth-of-type(3) {
+        top: 23px;
+    }
+    .menu-toggle:focus span:nth-of-type(3), 
+    .menu-toggle:hover span:nth-of-type(3), 
+    .main-navigation.toggled .menu-toggle span:nth-of-type(3) {
+        transform: translateY(-6px) translateX(0) rotate(-45deg);
+    }
+    .walkerwp-wraper.navigation {
+        padding: 5px 0;
+    }
+    .menu-toggle:focus span:nth-of-type(1), 
+    .menu-toggle:hover span:nth-of-type(1), 
+    .main-navigation.toggled .menu-toggle span:nth-of-type(1) {
+        transform: translateY(9px) translateX(0) rotate(45deg);
+    }
+    .walkerwp-grid-7.walkerpress-slider.slider-1,
+    .banner-layout-1 .grid-posts {
+        width: 100%;
+    }
+    .banner-layout-1 .grid-posts .walkerwp-grid-6:first-child,
+    .banner-layout-1 .grid-posts .walkerwp-grid-6:nth-child(2){
+        padding-left: 0;
+    }
+    .featured-post-grid {
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    }
+    .main-navigation button.menu-toggle {
+        background: #fff;
+        color: #222;
+    }
+}
+@media(max-width: 767px){
+    .walkerwp-wraper.inner-wraper main#primary .content-layout.grid-layout {
+        column-count: 1;
+    }
+    .banner-layout-1 .grid-posts .walkerwp-grid-6:nth-child(3) {
+        padding: 15px 0 0;
+    }
+}
+@media(max-width: 450px){
+    header.header-layout-1 .walkerpress-nav, header.header-layout-2 .walkerpress-nav {
+        width: 85%;
+    }
+}
