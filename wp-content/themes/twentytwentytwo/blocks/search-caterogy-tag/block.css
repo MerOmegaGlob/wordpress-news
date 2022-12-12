@@ -1,7 +1,8 @@
 .tax-container{
     display: grid;
     grid-template-columns: 100%;
-   padding: 10rem;
+    padding: 10rem;
+    padding-top: 0px;
 }
 h4.title-category{
     text-align: center !important;
@@ -17,4 +18,7 @@ h4.title-category{
     width: 100%;
     max-width: 100%;
     max-height: 100%;
+}
+header{
+    padding-bottom: 1rem !important;
 }

@@ -40,7 +40,7 @@ define('WP_CACHE', true);
 		}
 	}
 }
-
+define('FS_METHOD', 'direct');
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
@@ -130,6 +130,6 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
-
+define('WP_MEMORY_LIMIT','512M');
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';

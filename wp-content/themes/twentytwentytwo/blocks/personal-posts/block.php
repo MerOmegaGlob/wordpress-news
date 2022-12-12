@@ -19,6 +19,9 @@
                             <div class="post-title-<?php echo($key+1) ?> post-title">
                                     <h4 class="news-title"><?php echo($object->post_title) ?></h4>
                                 </div>
+                                <div class="excerpt-text">
+                                    <p><?php echo(get_the_excerpt($object)); ?></p>
+                                </div>
                             <div class="photo"> 
                                 <img class="img-<?php echo($key+1) ?>" 
                                 src="<?php echo $feat_image ?>" />

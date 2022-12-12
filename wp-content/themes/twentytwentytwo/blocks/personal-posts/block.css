@@ -12,6 +12,7 @@ h4.news-title{
 }
 .internal-padding{
     padding: 4rem;
+    padding-bottom: 0px;
 }
 .container{
     display: grid;
@@ -50,17 +51,33 @@ h4.news-title{
     grid-column: 2;
     transition: 0.5s;
 }
+
 .post-3:hover{
     background-color: #dddddd;
     transition: 0.5s;
 }
-/* .post-title-1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* .post-1{
+    align-self: center;
 } */
-
+header{
+    padding-bottom: 1rem !important;
+}
+.general-area .container{
+    padding-top: 0px;
+}
+.general-area{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.secondary-container{
+    padding-top: 0px;
+}
+.post-2 .excerpt-text{
+    display: none;
+}
+.post-3 .excerpt-text{
+    display: none;
+}
 @media only screen and (max-width:950px) {
     .post-1{
         align-self: center;

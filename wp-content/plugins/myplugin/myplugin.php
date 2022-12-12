@@ -82,7 +82,28 @@ function restorePerms(){
 	}
 }
 
-
+function echoTest(){
+	$idPost= get_the_ID();
+	$idAuthor =get_post_field(
+		"post_author",
+		$idPost
+	);
+	$author = get_the_author_meta(
+		"display_name",
+		$idAuthor
+	);
+	$link=get_author_posts_url(
+		$idAuthor
+	);
+	echo(
+		"<a href=\"$link\"><img src=\"".get_avatar_url($idAuthor)."\"/></a>
+		</br>"
+	);
+	echo(
+		"Post written by <a href=\"$link\">$author</a></br>"
+	);
+}
+add_shortcode("test","echoTest");
 /*
 add_action('init',function(){
 	add_role("comment_moderator",__("Comment Moderator"),array(

@@ -1,0 +1,40 @@
+.tax-container{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10rem;
+    padding-top: 0px;
+}
+.suggest-title{
+    text-align: center;
+}
+.suggested-wrap{
+    display: inline-flex;
+    flex-direction: row;
+    object-fit: cover;
+}
+.suggested-wrap .tax-container{
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+h4.title-category{
+    text-align: center !important;
+    font-size: 36px !important;
+}
+.photo > img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height:100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+header{
+    padding-bottom: 1rem !important;
+}
+main{
+    display: none;
+}

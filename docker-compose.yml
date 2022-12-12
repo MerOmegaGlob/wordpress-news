@@ -17,7 +17,7 @@ services:
     depends_on:
       - mysql-db
     image: wordpress:latest
-    restart: always
+    restart: on-failure
     # Restart line controls the restart mode, meaning if the container stops running for any reason, it will restart the process immediately.
     ports:
       - "8080:80"
@@ -29,7 +29,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
 # Similar to MySQL image variables, the last four lines define the main variables needed for the WordPress container to work properly with the MySQL container.
     volumes:
-      ["./:/var/www/html"]
+      - ./wp-content:/var/www/html/wp-content:cached
 # #SERVICE phpMyAdmin
   phpmyadmin:
     depends_on:
