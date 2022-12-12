@@ -1,0 +1,12 @@
+.secondary-container{
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+    padding: 5rem;
+    padding-top: 0px;
+}
+
+.post-title{
+    align-self:start;
+}
