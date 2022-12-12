@@ -10,8 +10,7 @@
             );
             foreach($recent_posts as $key=>$object){
                 $feat_image = wp_get_attachment_url(get_post_thumbnail_id(
-                        $object->ID),
-                        'thumbnail' 
+                        $object->ID)
                         ); 
                 ?>
                     <div class="post-<?php echo($key+1)?> post">
@@ -25,7 +24,6 @@
                             <div class="photo"> 
                                 <img class="img-<?php echo($key+1) ?>" 
                                 src="<?php echo $feat_image ?>" />
-                                
                             </div>
                         </a>
                     </div>   
